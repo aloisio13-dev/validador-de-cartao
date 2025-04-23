@@ -47,40 +47,53 @@ Este programa tem como objetivo validar números de cartões de crédito e ident
 
 1. Certifique-se de que o arquivo PDF com as bandeiras (`Bandeiracard.png.pdf`) está no caminho correto:
 
-   ```
+   `
    c:\Users\NOTE ALOISIO\OneDrive\Documentos\GitHub\validador-de-cartao\.snapshots\src\assets\Bandeiracard.png.pdf
-   ```
+   `
+
 2. Execute o programa:
+
    ```bash
    node .snapshots/src/extract_bandeiras.js
    ```
+
 3. Insira o número do cartão no código para validação:
+
    ```javascript
-   const cardNumber = "4111111111111111"; // Substitua pelo número do cartão
+   const cardNumber = 4111111111111111"; // Substitua pelo número do cartão
    ```
 
 ## Exemplo de Saída
+
 Se o número do cartão for válido e a bandeira for encontrada:
-```
+
+`
 Bandeiras encontradas no arquivo:
+
 - Visa
 O número do cartão 4111111111111111 é válido.
-```
+
+`
 
 Se o número do cartão for inválido:
-```
+
 Bandeiras encontradas no arquivo:
+
 - Visa
 O número do cartão 4111111111111111 é inválido.
-```
+
+`
 
 Se nenhuma bandeira for encontrada no arquivo:
-```
+
+`
 Nenhuma bandeira encontrada no arquivo.
-```
+
+`
 
 ## Estrutura do Projeto
-```
+
+`
 validador-de-cartao/
 ├── .snapshots/
 │   ├── src/
@@ -88,10 +101,12 @@ validador-de-cartao/
 │   │   │   └── Bandeiracard.png.pdf
 │   │   └── extract_bandeiras.js
 │   └── readme.md
-```
+`
 
 ## Contribuição
+
 Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias no projeto.
 
 ## Licença
+
 Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
